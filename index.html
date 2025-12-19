@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+        <input type="text" name="name" placeholder="Student Name (Optional)">
+
+        <input type="text" name="department" placeholder="Department" required>
+
+        <input type="text" name="subject" placeholder="Subject Name" required>
+
+        <input type="text" name="faculty" placeholder="Faculty Name" required>
+
+        <label>Overall Satisfaction (1–5)</label>
+        <select name="rating" required>
+            <option value="">Select</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <textarea name="comments" placeholder="Suggestions / Comments"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
